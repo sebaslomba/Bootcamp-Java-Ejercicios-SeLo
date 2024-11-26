@@ -20,6 +20,8 @@ public class RelojDemo {
             //nueva funcion agregada
             //imprimir desde la rama nueva-impresion
             System.out.println(primerReloj.toString());
+
+           //agregar un nuevo comentario pq me equivoqué xd
            
            //meto los valores del segundo reloj por teclado
             System.out.printf("\nIngrese la cantidad de horas:  "); 
