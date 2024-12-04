@@ -6,7 +6,7 @@ body
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: black;
+    background-color: gray;
 }
 
 .calculadora
@@ -17,9 +17,9 @@ body
     height: 500px;
     border-radius: 10%;
     background-color: firebrick;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     padding: 10px;
     text-align: center;
+    box-shadow: 0 20px 20px black;
 }
 
 .pantalla
@@ -28,30 +28,35 @@ body
     font-size: 20px ;
     justify-content: center;
     top: 45px;
-    left: 50px;
-    width: 260px;
-    height: 75px;
+    left: 10px;
+    width: 91%;
+    height: 100px;
     border-radius: 5%;
     background-color: lightgreen;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -3px 3px black;
+
  }
 table
 {
     width: 100% ;
-    margin-top: 200px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin-top: 190px;
+    border-radius: 5%;
+    background-color: maroon;
+    box-shadow: 0 3px 3px black;
+
 }
 td
 {
     width: 25%;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
     cursor: pointer;
     border: 2px solid black;
     user-select: none;
     background-color: whitesmoke;
     border-radius: 15%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 5px black;
     transition: transform 0.1s, box-shadow 0.1s;
 
 }
