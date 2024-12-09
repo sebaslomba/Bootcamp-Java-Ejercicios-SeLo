@@ -1,0 +1,146 @@
+@font-face {
+    font-family: "Absender";
+    src: url("Fonts/absender1.ttf") format("truetype");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+header {
+    background-color: midnightblue;
+    text-align: center;
+    padding: 20px 10px;
+    color: white;
+}
+
+header h1 {
+    font-family: "Absender", sans-serif;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+section {
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.marcoFoto {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    border-radius: 50%;
+    border: 5px solid #1d136e;
+    overflow: hidden;
+}
+
+.marcoFoto img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    top: -30px;
+}
+
+.textoEspecial {
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    background-color: rgba(4, 4, 124, 1);
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.textoCita, .textoTitulo {
+    font-size: 1em;
+    color: black;
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+.containerHabilidades, .containerFormacion, .containerVoluntariado {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .marcoFoto {
+        width: 150px;
+        height: 150px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .textoEspecial {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        text-align: left;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .marcoFoto {
+        width: 120px;
+        height: 120px;
+    }
+
+    .textoEspecial {
+        font-size: 1em;
+        padding: 8px;
+    }
+}
+#descargarBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s ease;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+#descargarBtn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#descargarBtn:active {
+    background-color: #004085;
+}
