@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de caracteres</title>
+</head>
+<h2> CONTADOR DE CARACTERES </h2>
+<body>
+        <div id="resultado"></div>
+        <script>
+                function contarCaracteres(cadena){
+                    return cadena.length;
+                }
+                const mensajeInicial = "Mathias Sebastian Lombardi Recalde";
+                const resultadoInicial = 'la cantidad de caracteres de la cadena inicial es de:  ${contarCaracteres(mensajeInicial)}';
+                console.log(resultadoInicial);
+
+                document.getElementById("resultado").innerText = resultadoInicial;
+        </script>
+        <script src = "EjercicioUno.js"></script>
+</body>
+</html>

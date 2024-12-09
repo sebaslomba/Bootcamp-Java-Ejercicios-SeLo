@@ -1,0 +1,96 @@
+/* Centramos el body y el contenido */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilo de la tabla */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezados */
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: grey;
+    color: #fff;
+}
+
+/* Colores alternos */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+/*club y nombre*/
+.club
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Estilo de las imágenes */
+.club img
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.club span
+{
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  white-space: nowrap;
+}
+
+/*resultado en circulos*/
+.result
+{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    align-font: center;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 2;
+    margin 0 2px;
+}
+/*estilos de los iconos de resultados*/
+.result.win
+{
+    background-color:green;
+    color: white;
+}
+.result.loss
+{
+    background-color:red;
+    color: white;
+}
+.result.draw
+{
+    background-color:gray;
+    color: white;
+}
