@@ -1,5 +1,4 @@
-body
-{
+body {
     background-image: url("imagenes/5559852.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -11,188 +10,55 @@ body
     position: relative;
 }
 
-.textoNuevo
-{
-    font-family: Absender sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
+.container {
+    margin-top: 30px;
 }
 
-/*contenedores de trabajos*/
-.containerTrabajo1
-{
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.containerTrabajo {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    height: 170px;
+    width: 170px;
     position: relative;
-    align-items: center;
-    width: 200px;
-    height: 200px;
-    background: rgba(0,0,0,0.6);
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    color: white;
-    text-align: center;
-    transition: all 0.3s ease-in-out;
     top: 100px;
-    left: 150px;
-}
-.containerTrabajo1 img
-{
-    margin-left: -20px;
-    width: 120%;
-    height: 100%;
-}
-.containerTrabajo1:hover {
-    background: rgba(255, 255, 255, 0.4);
-    border-color: rgba(255, 255, 255, 0.8);
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    left: 100px;
+    padding: 5px;
 }
 
-.containerTrabajo2
-{
-    align-items: center;
-    width: 200px;
-    height: 200px;
-    background: rgba(0,0,0,0.6);
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    color: white;
-    text-align: center;
-    transition: all 0.3s ease-in-out;
-    top: 100px;
-    left: 550px;
-}
-.containerTrabajo2 img
-{
+.containerTrabajo img {
     width: 100%;
     height: 100%;
+    border-radius: 8px;
 }
-.containerTrabajo2:hover {
+
+.containerTrabajo:hover {
     background: rgba(255, 255, 255, 0.4);
-    border-color: rgba(255, 255, 255, 0.8);
     transform: scale(1.05);
     box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
 }
 
-.containerTrabajo3
-{
-    position: absolute;
-    align-items: center;
-    width: 200px;
-    height: 200px;
-    background: rgba(0,0,0,0.6);
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    color: white;
-    text-align: center;
-    transition: all 0.3s ease-in-out;
-    top: 100px;
-    left: 950px;
-}
-.containerTrabajo3 img
-{
-    width: 100%;
-    height: 100%;
-}
-.containerTrabajo3:hover {
-    background: rgba(255, 255, 255, 0.4);
-    border-color: rgba(255, 255, 255, 0.8);
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
-}
-
-.containerTrabajo4
-{
-    position: absolute;
-    align-items: center;
-    width: 200px;
-    height: 200px;
-    background: rgba(0,0,0,0.6);
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    color: white;
-    text-align: center;
-    transition: all 0.3s ease-in-out;
-    top: 350px;
-    left: 350px;
-}
-.containerTrabajo4 img
-{
-    width: 100%;
-    height: 100%;
-}
-.containerTrabajo4:hover {
-    background: rgba(255, 255, 255, 0.4);
-    border-color: rgba(255, 255, 255, 0.8);
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
-}
-
-.containerTrabajo5
-{
-    position: absolute;
-    align-items: center;
-    width: 200px;
-    height: 200px;
-    background: rgba(0,0,0,0.6);
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    color: white;
-    text-align: center;
-    transition: all 0.3s ease-in-out;
-    top: 350px;
-    left: 750px;
-}
-.containerTrabajo5 img
-{
-    width: 100%;
-    height: 100%;
-}
-.containerTrabajo5:hover {
-    background: rgba(255, 255, 255, 0.4);
-    border-color: rgba(255, 255, 255, 0.8);
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
-}
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-}
-
-.containerTrabajo1, .containerTrabajo2, .containerTrabajo3, .containerTrabajo4, .containerTrabajo5 {
-    animation: float 3s ease-in-out infinite;
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.containerTrabajo1:hover, .containerTrabajo2:hover, .containerTrabajo3:hover, .containerTrabajo4:hover, .containerTrabajo5:hover
-{
-    transform: scale(1.1);
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-
-}
-
-.botonHome
-{
-    position: relative;
-    align-content: center;
+.botonHome {
+    position: fixed;
+    top: 20px;
+    left: 20px;
     width: 40px;
     height: 40px;
     background-color: rgba(14, 2, 130, 0.66);
     border-radius: 10px;
-    box-shadow: 0 5px 5px rgba(0,0,0,0.83);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.83);
+    z-index: 1000;
 }
-.botonHome img
-{
+
+.botonHome img {
     width: 100%;
     height: 100%;
 }
