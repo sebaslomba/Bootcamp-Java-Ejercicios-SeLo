@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web Personal</title>
+    <link rel="stylesheet" href="PaginaWebPersonal.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+</head>
+<body>
+<div class="container" id="content">
+    <header>
+        <h1>CV</h1>
+    </header>
+    <section>
+        <div class="marcoFoto">
+            <img src="imagenes/WhatsApp%20Image%202024-10-10%20at%2019.28.48.jpeg" alt="Foto personal">
+        </div>
+        <p class="textoEspecial">Mathias Sebastian Lombardi Recalde</p>
+        <p class="textoCita">
+            Conocimientos en hardware, software y programación.
+            Resolución de problemas, toma de decisiones rápidas y trabajo en equipo.
+        </p>
+    </section>
+
+    <section class="containerFormacion">
+        <h2 class="textoEspecial">Formación</h2>
+        <p class="textoTitulo">Bachiller Técnico en Mecatrónica</p>
+        <p class="textoCita">Colegio Sagrado Corazón de Jesús - Salesianito</p>
+        <p class="textoCita">Feb 2018 - Nov 2020</p>
+        <p class="textoTitulo">Lic. en Ciencias Informáticas</p>
+        <p class="textoCita">Facultad Politécnica UNA - San Lorenzo</p>
+        <p class="textoCita">Jun 2022 - Actualidad</p>
+    </section>
+
+    <section class="containerHabilidades">
+        <h2 class="textoEspecial">Habilidades</h2>
+        <ul>
+            <li class="textoCita">Java, HTML, NodeJS</li>
+            <li class="textoCita">TypeScript, Python</li>
+            <li class="textoCita">Resolución de problemas</li>
+            <li class="textoCita">Trabajo en equipo</li>
+            <li class="textoCita">Atención al detalle</li>
+        </ul>
+    </section>
+
+    <section class="containerVoluntariado">
+        <h2 class="textoEspecial">Voluntariado</h2>
+        <p class="textoTitulo">Ñamomarandu - 2022</p>
+        <p class="textoCita">Enseñanza tecnológica a personas de tercera edad.</p>
+        <p class="textoTitulo">Juegos Suramericanos ODESUR ASU 2022</p>
+        <p class="textoCita">Soporte y asistencia en eventos deportivos.</p>
+    </section>
+    <button id="descargarBtn">Descargar PDF</button>
+</div>
+
+<script src="PaginaWebPersonal.js"></script>
+</body>
+</html>
