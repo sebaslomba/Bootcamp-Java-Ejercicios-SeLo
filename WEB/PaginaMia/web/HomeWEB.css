@@ -38,7 +38,7 @@ body {
 
 .textoPortfolio, .textoAboutMe, .textoContactar {
     font-family: 'Absender', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     color: white;
     font-weight: bold;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
@@ -64,4 +64,14 @@ body {
     position: absolute;
     top: 25px;
     left: 1300px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #FFD700;
 }
