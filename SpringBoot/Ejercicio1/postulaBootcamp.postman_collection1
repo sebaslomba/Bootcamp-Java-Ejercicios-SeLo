@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "473a1983-78cc-43ab-9b23-08f803608794",
+		"name": "postulaBootcamp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40521422"
+	},
+	"item": [
+		{
+			"name": "PostPostulantes",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nroCedula\": 123321 ,\r\n    \"nombre\": \"Marcos\",\r\n    \"apellido\": \"Ortiz\",\r\n    \"telefono\": \"01248023\",\r\n    \"direccion\": \"Callasdfe Falsa 1223\",\r\n    \"correo\": \"Marcos.asdfrec@example.com\",\r\n    \"estudioUniversitario\": true,\r\n    \"notebook\": true,\r\n    \"aceptado\": false,\r\n    \"expLaboral\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/postulantes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"postulantes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostSegundoPostulante",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nroCedula\": 11223344,\r\n    \"nombreBootcamp\": null,\r\n    \"nombre\": \"Carlos\",\r\n    \"apellido\": \"Lopez\",\r\n    \"telefono\": \"123456afda789\",\r\n    \"direccion\": \"Callasdfe Falsa 123\",\r\n    \"correo\": \"carlos.asdflopez@example.com\",\r\n    \"estudioUniversitario\": true,\r\n    \"notebook\": true,\r\n    \"aceptado\": false,\r\n    \"expLaboral\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_postulante}}localhost:8080/postulantes",
+					"host": [
+						"{{base_postulante}}localhost"
+					],
+					"port": "8080",
+					"path": [
+						"postulantes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Postulantes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/postulantes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"postulantes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar Postulante",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/postulantes/BorrarPorCedula/11223344",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"postulantes",
+						"BorrarPorCedula",
+						"11223344"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "base_postulante",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "delete_postulante",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
